@@ -10,12 +10,18 @@ export class ProduitsComponent implements OnInit {
   prix: number;
 
   constructor() {
-    this.nom = 'lait';
     this.prix = 30;
+    this.nom = {
+      nomlait: 'lait';
+      nompain: 'pain';
+    };
    }
 
   ngOnInit(): void {
   }
 
-  
+  interface nom {
+    nomlait: String;
+    nompain: String;
+  }
 }

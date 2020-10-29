@@ -1,6 +1,11 @@
 <p>La liste des produitsproduits </p>
 <ul>
-    <li>Nom: {{ nom }} </li>
     <li>Prix: {{ prix }} </li>
+    <li>Nom: 
+        <ul>
+            <li>lait: {{nom.nomlait}} </li>
+            <li>pain: {{nom.nompain}} </li>
+        </ul>
+    </li>
 </ul>
 <button (click)="onclick()">Ajouter au panier</button>
